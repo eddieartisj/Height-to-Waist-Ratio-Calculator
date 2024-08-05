@@ -1,0 +1,28 @@
+# Waist to Height Ratio
+#Author: Eddie Artis
+#Date Last Updated: 7/30/2024
+#Purpose: To calculate the waist to height ratio of a person
+
+#Ask the user for their height in inches
+height = float(input("Enter your height in inches: "))
+
+#Ask the user for their waist in inches
+waist = float(input("Enter your waist size in inches: "))
+
+#Calculate the waist to height ratio
+ratio = waist / height
+
+#Display the waist to height ratio
+print("Your waist to height ratio is " + str(ratio))
+
+if ratio < 0.45:
+  print("You are underweight")
+
+if ratio > 0.50:
+  print("You are overweight")
+
+if ratio >0.60:
+  print("You are obese")
+
+if ratio >= 0.45 and ratio < 0.50:
+  print("You are an optimal weight")
